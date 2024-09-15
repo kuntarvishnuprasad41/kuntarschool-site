@@ -3,6 +3,11 @@
 @tailwind utilities;
 
 
+html, body {
+   overflow-y: auto;
+}
+
+
 .custom-image-wrapper {
   position: relative;
   width: 100%;

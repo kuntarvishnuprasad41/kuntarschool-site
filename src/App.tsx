@@ -25,7 +25,7 @@ const App: React.FC = () => {
   ];
 
   return (
-    <div className="flex   flex-col items-center bg-white   justify-center w-screen overflow-y-hidden">
+    <div className="flex   flex-col   bg-white  w-screen overflow-y-hidden">
       <Header
         title="Applications open 20-24 April!!!"
         subtitle="Don't miss out on this opportunity"
@@ -45,7 +45,7 @@ const App: React.FC = () => {
         alt="Hero background"
         className="object-contain w-full aspect-[83.33] max-md:max-w-full mt-16 -mb-10"
       />
-      <div className="px-48">
+      <div className=" ">
         <HeroSection />
         <ProgramsSection />
         <AboutSection />

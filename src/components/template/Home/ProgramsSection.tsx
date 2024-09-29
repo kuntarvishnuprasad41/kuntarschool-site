@@ -28,35 +28,37 @@ const programsData = [
 
 const ProgramsSection: React.FC = () => {
   return (
-    <section className="mt-16 max-md:mt-10 max-md:max-w-full">
-      <h2 className="text-5xl font-bold tracking-widest leading-none text-black max-md:mt-10 max-md:text-4xl">
-        Our Programs
-      </h2>
-      <p className="mt-11 text-2xl tracking-wider leading-10 text-center text-black max-md:mt-10 max-md:max-w-full">
-        Our multi-level kindergarten cater to the age groups 2-5 years with a
-        curriculum focussing children.
-      </p>
-      <div className="mt-28 w-full max-w-[1674px] max-md:mt-10 max-md:max-w-full">
-        <div className="flex gap-5 max-md:flex-col">
-          {programsData.map((program, index) => (
-            <div
-              key={index}
-              className="flex flex-col w-[33%] max-md:ml-0 max-md:w-full"
-            >
-              <ProgramCard {...program} />
-            </div>
-          ))}
+    <section className="mt-16 max-md:mt-10   ">
+      <div className="flex flex-col justify-center items-center px-[20px]">
+        <h2 className="text-5xl font-bold tracking-widest leading-none text-black max-md:mt-10 max-md:text-4xl">
+          Our Programs
+        </h2>
+        <p className="mt-11 text-2xl tracking-wider leading-10 text-center text-black max-md:mt-10 max-md:max-w-full">
+          Our multi-level kindergarten cater to the age groups 2-5 years with a
+          curriculum focussing children.
+        </p>
+        <div className="mt-28 w-full max-w-[1674px] max-md:mt-10 max-md:max-w-full">
+          <div className="flex gap-5 max-md:flex-col">
+            {programsData.map((program, index) => (
+              <div
+                key={index}
+                className="flex flex-col w-[33%] max-md:ml-0 max-md:w-full"
+              >
+                <ProgramCard {...program} />
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
-      <div className="flex gap-2 mt-20 w-[98px] max-md:mt-10">
-        <div className="flex flex-col flex-1 rounded-2xl bg-zinc-800">
-          <div className="flex shrink-0 rounded-2xl bg-zinc-800 h-[13px]" />
-        </div>
-        <div className="flex flex-col flex-1 rounded-2xl bg-zinc-100">
-          <div className="flex shrink-0 rounded-2xl bg-zinc-100 h-[13px]" />
-        </div>
-        <div className="flex flex-col flex-1 rounded-2xl bg-zinc-100">
-          <div className="flex shrink-0 rounded-2xl bg-zinc-100 h-[13px]" />
+        <div className="flex gap-2 mt-20 w-[98px] max-md:mt-10">
+          <div className="flex flex-col flex-1 rounded-2xl bg-zinc-800">
+            <div className="flex shrink-0 rounded-2xl bg-zinc-800 h-[13px]" />
+          </div>
+          <div className="flex flex-col flex-1 rounded-2xl bg-zinc-100">
+            <div className="flex shrink-0 rounded-2xl bg-zinc-100 h-[13px]" />
+          </div>
+          <div className="flex flex-col flex-1 rounded-2xl bg-zinc-100">
+            <div className="flex shrink-0 rounded-2xl bg-zinc-100 h-[13px]" />
+          </div>
         </div>
       </div>
     </section>

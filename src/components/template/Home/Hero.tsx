@@ -6,8 +6,8 @@ const HeroSection: React.FC = () => {
       <div className="self-center mt-5   max-md:mt-10 w-screen lg:max-w-[1680px] md:max-w-[700px] sm:max-w-[390px] px-[20px]">
         <div className="flex gap-5 max-md:flex-col">
           {/* Left section */}
-          <div className="flex flex-col w-[45%] max-lg:w-[50%] max-md:w-full">
-            <div className="flex flex-col items-start self-stretch my-auto text-2xl font-medium tracking-wider leading-none max-md:mt-10 max-md:max-w-full">
+          <div className="flex flex-col w-[45%] max-lg:w-[50%] max-md:w-full ">
+            <div className="flex flex-col lg:items-start md:items-start items-center self-stretch my-auto text-2xl font-medium tracking-wider leading-none max-md:mt-10 max-md:max-w-full">
               <h2 className="text-3xl font-semibold tracking-wider text-teal-500 max-md:text-xl">
                 Kindergarten Program
               </h2>

@@ -21,8 +21,8 @@ const TeachersSection: React.FC = () => {
   ];
 
   return (
-    <section className="mt-44 max-md:mt-10 max-md:max-w-full">
-      <h2 className="text-5xl font-bold tracking-widest leading-none text-black max-md:text-4xl">
+    <section className="mt-44 max-md:mt-10 max-md:max-w-full px-[20px]">
+      <h2 className="text-5xl font-bold tracking-widest leading-none text-black max-md:text-4xl text-center">
         Our Best Teachers
       </h2>
       <p className="mt-14 text-2xl tracking-wider leading-10 text-center text-black max-md:mt-10 max-md:max-w-full">

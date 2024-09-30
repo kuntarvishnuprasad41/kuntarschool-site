@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="flex flex-col self-stretch pt-80 pb-24 mt-0 w-full max-md:pt-24 max-md:mt-0 max-md:max-w-full">
+    <footer className="flex flex-col self-stretch pt-80 pb-24 mt-0 w-full max-md:pt-24 max-md:mt-0 max-md:max-w-full px-[20px]">
       <div className="flex flex-col self-center w-full max-w-[1641px] max-md:max-w-full">
         <div className="flex flex-wrap gap-10 max-w-full leading-none w-[792px]">
           <div className="flex flex-1 gap-4 text-teal-500">
@@ -102,7 +102,7 @@ const Footer: React.FC = () => {
               </a>
             </div>
             <address className="flex flex-col items-start text-2xl tracking-wider leading-10 text-stone-500 not-italic">
-              <p>Westlands Building, Nairobi, KE</p>
+              <p>Kuntar</p>
               <p className="mt-9 leading-loose">012-345-6789</p>
               <p className="mt-10">edukidsupport@email.com</p>
             </address>

@@ -5,7 +5,7 @@ const TestimonialSection: React.FC = () => {
     <section className="self-stretch mt-28 w-full max-md:mt-10 max-md:max-w-full">
       <div className="flex gap-5 max-md:flex-col">
         <div className="flex flex-col w-6/12 max-md:ml-0 max-md:w-full">
-          <div className="flex relative flex-col grow justify-center items-center px-20 py-96 min-h-[1020px] max-md:px-5 max-md:py-24 max-md:mr-0 max-md:max-w-full">
+          <div className="lg:flex relative flex-col grow justify-center items-center px-20 py-96 min-h-[1020px] max-md:px-5 max-md:py-24 max-md:mr-0 max-md:max-w-full hidden">
             <img
               loading="lazy"
               src="https://cdn.builder.io/api/v1/image/assets/TEMP/f6c95f9bbac7cda8153492c7b1cecde9b0f076980b5f69fde4128610259618a6?placeholderIfAbsent=true&apiKey=69b6bc2ce7e445dc86378964c554c673"

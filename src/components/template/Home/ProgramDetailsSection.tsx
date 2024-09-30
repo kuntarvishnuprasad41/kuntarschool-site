@@ -2,7 +2,7 @@ import React from "react";
 
 const AboutSection: React.FC = () => {
   return (
-    <section className="mt-52 w-full max-w-[1763px] max-md:mt-10 max-md:max-w-full">
+    <section className="mt-52 w-full max-w-[1763px] max-md:mt-10 max-md:max-w-full px-[20px]">
       <div className="flex gap-5 max-md:flex-col">
         <div className="flex flex-col w-[55%] max-md:ml-0 max-md:w-full">
           <img

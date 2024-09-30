@@ -16,6 +16,7 @@ const programsData = [
     description:
       "Musical indoor and outdoor activities that cater to all domains development!",
     isHighlighted: true,
+    bg: "#2CC4B9",
   },
   {
     imageSrc:
@@ -42,7 +43,7 @@ const ProgramsSection: React.FC = () => {
             {programsData.map((program, index) => (
               <div
                 key={index}
-                className="flex flex-col w-[33%] max-md:ml-0 max-md:w-full"
+                className={`flex flex-col w-[33%] max-md:ml-0 max-md:w-full `}
               >
                 <ProgramCard {...program} />
               </div>

@@ -14,10 +14,10 @@ const ProgramCard: React.FC<ProgramCardProps> = ({
   isHighlighted = false,
 }) => {
   const cardClasses = isHighlighted
-    ? "flex relative flex-col grow min-h-[600px] rounded-[32px] max-md:mt-9 max-md:max-w-full"
+    ? "flex relative flex-col grow min-h-[600px] rounded-[32px] max-md:mt-9 max-md:max-w-full  "
     : "flex flex-col grow items-center px-16 py-12 border-2 border-orange-400 border-dashed rounded-[32px] max-md:px-5 max-md:mt-9 max-md:max-w-full";
   const contentClasses = isHighlighted
-    ? "flex relative flex-col items-center px-14 py-12 bg-teal-400 bg-opacity-60 rounded-[32px] max-md:px-5 max-md:max-w-full"
+    ? "flex relative flex-col items-center px-14 py-12 bg-[#2CC4B9] bg-opacity-60 rounded-[32px] max-md:px-5 max-md:max-w-full "
     : "";
   const titleClasses = isHighlighted ? "text-white" : "text-black";
   const descriptionClasses = isHighlighted ? "text-white" : "text-black";
@@ -32,7 +32,7 @@ const ProgramCard: React.FC<ProgramCardProps> = ({
           loading="lazy"
           src="https://cdn.builder.io/api/v1/image/assets/TEMP/d9c282782386a901ddfdd454f8f9042b552c90ca348d9b8f485591cfbcf682fb?placeholderIfAbsent=true&apiKey=69b6bc2ce7e445dc86378964c554c673"
           alt=""
-          className="object-cover absolute inset-0 size-full"
+          className="object-cover absolute inset-0 size-full rounded-[32px]"
         />
       )}
       <div className={contentClasses}>

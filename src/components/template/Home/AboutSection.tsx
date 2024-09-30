@@ -2,9 +2,9 @@ import React from "react";
 
 const AboutSection: React.FC = () => {
   return (
-    <section className="mt-52 w-full max-w-[1763px] max-md:mt-10 max-md:max-w-full">
+    <section className="mt-52 w-full max-w-[1763px] max-md:mt-10 max-md:max-w-full px-[20px]">
       <div className="flex gap-5 max-md:flex-col">
-        <div className="flex flex-col w-[55%] max-md:ml-0 max-md:w-full">
+        <div className="flex flex-col w-[55%] justify-center items-center max-md:ml-0 max-md:w-full">
           <img
             loading="lazy"
             src="https://cdn.builder.io/api/v1/image/assets/TEMP/a401bbff11d1a42e4d49bf886defd18b75f7774f98b62da79c5605f8e5585ac0?placeholderIfAbsent=true&apiKey=69b6bc2ce7e445dc86378964c554c673"

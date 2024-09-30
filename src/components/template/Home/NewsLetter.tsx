@@ -67,7 +67,7 @@ const NewsCard: React.FC<NewsItem> = ({ imageSrc, author, title }) => {
 
 const NewsLetterSection: React.FC = () => {
   return (
-    <section className="flex z-10 flex-col mt-24 w-full max-w-[1670px] max-md:mt-10 max-md:max-w-full">
+    <section className="flex z-10 flex-col mt-24 w-full max-w-[1670px] max-md:mt-10 max-md:max-w-full px-[20px]">
       <h2 className="self-start text-5xl font-bold tracking-widest leading-none text-black max-md:text-4xl">
         EduKid News
       </h2>

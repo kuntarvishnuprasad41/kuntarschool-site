@@ -83,18 +83,25 @@ const ProgramsSection: React.FC = () => {
             ))}
           </div>
         </div> */}
-        {/* {programsData.map((_, index) => (
-          <>
-            <div
-              className={`flex flex-col flex-1 rounded-2xl ${
-                currentSlide === index ? "bg-zinc-800" : "bg-zinc-100"
-              }`}
-            >
-              {index}
-              <div className="flex shrink-0 rounded-2xl bg-zinc-100 h-[13px]" />
-            </div>
-          </>
-        ))} */}
+
+        <div className="flex gap-2 mt-20 w-[98px] max-md:mt-10">
+          {programsData.map((_, index) => (
+            <>
+              <div
+                className={`flex flex-col flex-1 rounded-2xl ${
+                  currentSlide == index ? "bg-zinc-800" : "bg-zinc-100"
+                }`}
+                title=""
+              >
+                <div
+                  className={`flex shrink-0 rounded-2xl ${
+                    currentSlide == index ? "bg-zinc-800" : "bg-zinc-100"
+                  } h-[13px]`}
+                />
+              </div>
+            </>
+          ))}
+        </div>
 
         {/* <div className="flex gap-2 mt-20 w-[98px] max-md:mt-10">
           <div className="flex flex-col flex-1 rounded-2xl bg-zinc-800">

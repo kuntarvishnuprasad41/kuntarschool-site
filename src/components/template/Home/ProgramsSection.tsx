@@ -1,5 +1,13 @@
 import React from "react";
 import ProgramCard from "./ProgramCard";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "../../ui/carousel";
+import { Card, CardContent } from "../../ui/card";
 
 const programsData = [
   {
@@ -28,6 +36,7 @@ const programsData = [
 ];
 
 const ProgramsSection: React.FC = () => {
+  const [currentSlide, setCurrentSlide] = React.useState(0);
   return (
     <section className="mt-16 max-md:mt-10   ">
       <div className="flex flex-col justify-center items-center px-[20px]">
@@ -40,27 +49,66 @@ const ProgramsSection: React.FC = () => {
         </p>
         <div className="mt-28 w-full max-w-[1674px] max-md:mt-10 max-md:max-w-full">
           <div className="flex gap-5 max-md:flex-col">
-            {programsData.map((program, index) => (
+            <Carousel className="w-screen mx-[20px] ">
+              <CarouselContent className="  ">
+                {programsData.map((program, index) => (
+                  <CarouselItem
+                    key={index}
+                    className=" md:basis-1/2 lg:basis-1/3"
+                  >
+                    <ProgramCard {...program} />
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <CarouselPrevious />
+              <CarouselNext />
+            </Carousel>
+          </div>
+        </div>
+        {/* <div className="flex justify-center mt-4">
+          <div className="flex gap-2 mt-20 w-[98px] max-md:mt-10">
+            {programsData.map((_, index) => (
               <div
                 key={index}
-                className={`flex flex-col w-[33%] max-md:ml-0 max-md:w-full `}
+                className={`flex flex-col flex-1 rounded-2xl ${
+                  index === currentSlide ? "bg-zinc-800" : "bg-zinc-100"
+                }`}
               >
-                <ProgramCard {...program} />
+                <div
+                  className={`flex shrink-0 rounded-2xl ${
+                    index === currentSlide ? "bg-zinc-800" : "bg-zinc-100"
+                  } h-[13px]`}
+                />
               </div>
             ))}
           </div>
-        </div>
-        <div className="flex gap-2 mt-20 w-[98px] max-md:mt-10">
+        </div> */}
+        {/* {programsData.map((_, index) => (
+          <>
+            <div
+              className={`flex flex-col flex-1 rounded-2xl ${
+                currentSlide === index ? "bg-zinc-800" : "bg-zinc-100"
+              }`}
+            >
+              {index}
+              <div className="flex shrink-0 rounded-2xl bg-zinc-100 h-[13px]" />
+            </div>
+          </>
+        ))} */}
+
+        {/* <div className="flex gap-2 mt-20 w-[98px] max-md:mt-10">
           <div className="flex flex-col flex-1 rounded-2xl bg-zinc-800">
             <div className="flex shrink-0 rounded-2xl bg-zinc-800 h-[13px]" />
           </div>
+
+           <div className="flex flex-col flex-1 rounded-2xl bg-zinc-100">
+            <div className="flex shrink-0 rounded-2xl bg-zinc-100 h-[13px]" />
+          </div>
+         
           <div className="flex flex-col flex-1 rounded-2xl bg-zinc-100">
             <div className="flex shrink-0 rounded-2xl bg-zinc-100 h-[13px]" />
           </div>
-          <div className="flex flex-col flex-1 rounded-2xl bg-zinc-100">
-            <div className="flex shrink-0 rounded-2xl bg-zinc-100 h-[13px]" />
-          </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

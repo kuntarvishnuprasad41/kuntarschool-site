@@ -22,8 +22,47 @@ const AboutSection: React.FC = () => {
               having a go attempting that difficult question, offering an answer
               in a lesson when you're simply really trying new.
             </p>
-            <div className="self-stretch px-20 py-9 mt-14 bg-teal-500 rounded-[32px] max-md:px-5 max-md:mt-10 max-md:mr-2.5 max-md:max-w-full">
-              <div className="flex gap-5 max-md:flex-col">
+            <div className="w-full px-20 py-9 mt-14 bg-teal-500 rounded-[32px] max-md:px-5 max-md:mt-10 max-md:mr-2.5 max-md:max-w-full flex flex-col lg:flex-row justify-between gap-5 items-center">
+              <div>
+                <div className="flex flex-col grow text-white max-md:mt-10">
+                  <div className="self-center text-3xl font-bold tracking-wider leading-none">
+                    14+
+                  </div>
+                  <div className="mt-6 text-xl tracking-wide leading-8 text-center">
+                    Years of experience
+                  </div>
+                </div>
+              </div>
+              <div className="text-white text-center items-center">
+                Continuing from where we left off:
+              </div>
+              <div>
+                <div className="flex grow items-center   justify-between text-white max-md:mt-10">
+                  <div className="shrink-0 my-auto lg:w-0.5 border-2   border-teal-300 border-solid h-[4px] w-[10px]  lg:h-[65px]" />
+                  <div className="flex flex-col">
+                    <div className="self-start ml-3.5 text-3xl font-bold tracking-wider leading-none max-md:ml-2.5">
+                      14+
+                    </div>
+                    <div className="mt-6 text-xl tracking-wide leading-8 text-center">
+                      Students each year
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div className="flex grow items-center   justify-between text-white max-md:mt-10">
+                  <div className="shrink-0 my-auto lg:w-0.5 border-2   border-teal-300 border-solid h-[4px] w-[10px]  lg:h-[65px]" />
+                  <div className="flex flex-col">
+                    <div className="self-start ml-3.5 text-3xl font-bold tracking-wider leading-none max-md:ml-2.5">
+                      14+
+                    </div>
+                    <div className="mt-6 text-xl tracking-wide leading-8 text-center">
+                      Students each year
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {/* <div className="flex gap-5 max-md:flex-col">
                 <div className="flex flex-col w-[22%] max-md:ml-0 max-md:w-full">
                   <div className="flex flex-col grow text-white max-md:mt-10">
                     <div className="self-center text-3xl font-bold tracking-wider leading-none">
@@ -34,8 +73,8 @@ const AboutSection: React.FC = () => {
                     </div>
                   </div>
                 </div>
-                <div className="flex flex-col ml-5 w-[78%] max-md:ml-0 max-md:w-full">
-                  <div className="flex grow gap-5 justify-between text-white max-md:mt-10">
+                <div className="flex flex-col gap-5  w-[78%] max-md:ml-0 max-md:w-full">
+                  <div className="flex grow items-center   justify-between text-white max-md:mt-10">
                     Continuing from where we left off:
                     <div className="shrink-0 my-auto w-0.5 border-2 border-teal-300 border-solid h-[65px]" />
                     <div className="flex flex-col">
@@ -57,7 +96,7 @@ const AboutSection: React.FC = () => {
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
             <div className="flex flex-wrap gap-4 mt-10 text-2xl tracking-wider leading-loose text-black">
               <img

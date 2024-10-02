@@ -92,7 +92,7 @@ const AboutSection: React.FC = () => {
                     View more
                   </button>
                 </div>
-                <div className="flex flex-col ml-5 w-[19%] max-md:ml-0 max-md:w-full">
+                <div className="flex flex-col justify-center items-center content-center ml-5 w-[19%] max-md:ml-0 max-md:w-full">
                   <img
                     loading="lazy"
                     src="https://cdn.builder.io/api/v1/image/assets/TEMP/defc6b4ba5faa456dca2140503ae895c85dbfa40dcdc2306aaaa93bbc212b2fe?placeholderIfAbsent=true&apiKey=69b6bc2ce7e445dc86378964c554c673"
@@ -100,7 +100,7 @@ const AboutSection: React.FC = () => {
                     className="object-contain shrink-0 max-w-full aspect-square w-[115px]"
                   />
                 </div>
-                <div className="flex flex-col ml-5 w-[34%] max-md:ml-0 max-md:w-full">
+                <div className="flex flex-col justify-center items-center content-center  ml-5 w-[34%] max-md:ml-0 max-md:w-full">
                   <p className="mt-10 text-2xl tracking-wider leading-loose text-black">
                     Promotional Video
                   </p>

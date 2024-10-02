@@ -14,8 +14,8 @@ const ProgramCard: React.FC<ProgramCardProps> = ({
   isHighlighted = false,
 }) => {
   const cardClasses = isHighlighted
-    ? "relative flex flex-col items-center justify-center grow min-h-[600px] rounded-[32px] max-md:mt-9 max-md:max-w-[80%] h-[600px]"
-    : "flex flex-col items-center justify-center grow px-16 py-12 border-2 border-orange-400 border-dashed rounded-[32px] max-md:px-5 max-md:mt-9 max-md:max-w-[80%] h-[600px]";
+    ? "relative flex flex-col items-center justify-center grow min-h-[600px] rounded-[32px] max-md:mt-9 max-md:max-w-[100%] h-[600px]"
+    : "flex flex-col items-center justify-center grow px-16 py-12 border-2 border-orange-400 border-dashed rounded-[32px] max-md:px-5 max-md:mt-9 max-md:max-w-[100%] h-[600px]";
 
   const contentClasses =
     "relative z-10 flex flex-col items-center justify-center px-14 py-12 rounded-[32px] max-md:px-5 max-md:max-w-full";

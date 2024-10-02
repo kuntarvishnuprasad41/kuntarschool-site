@@ -123,7 +123,7 @@ const ProgramDetailsCard: React.FC<ProgramDetail> = ({
 
 const ProgramDetailsSection: React.FC = () => {
   return (
-    <section className="flex flex-col justify-center items-center self-stretch px-20 py-40 mt-44 w-full bg-[linear-gradient(280deg,#EDFEFC_13.84%,#FEF6EC_96.14%)] max-md:px-5 max-md:py-24 max-md:mt-10 max-md:max-w-full">
+    <section className=" flex flex-col justify-center items-center self-stretch px-20 py-40 mt-44 w-full bg-[linear-gradient(280deg,#EDFEFC_13.84%,#FEF6EC_96.14%)] max-md:px-5 max-md:py-24 max-md:mt-10 max-md:max-w-full">
       <div className="flex flex-col items-center mb-0 w-full max-w-[1668px] max-md:mb-2.5 max-md:max-w-full">
         <h2 className="text-5xl font-bold tracking-widest leading-none text-black max-md:text-4xl">
           Our Programs

@@ -33,28 +33,56 @@ const programsData = [
     description:
       "Fun Arts and Crafts projects for the children to work on together!",
   },
+  {
+    imageSrc:
+      "https://cdn.builder.io/api/v1/image/assets/TEMP/b86daa636a2bfd53d9f340d45010665c1f425fe654927e3358fce284870c7bbe?placeholderIfAbsent=true&apiKey=69b6bc2ce7e445dc86378964c554c673",
+    title: "Drawing Class",
+    description:
+      "Fun Arts and Crafts projects for the children to work on together!",
+  },
+  {
+    imageSrc:
+      "https://cdn.builder.io/api/v1/image/assets/TEMP/b86daa636a2bfd53d9f340d45010665c1f425fe654927e3358fce284870c7bbe?placeholderIfAbsent=true&apiKey=69b6bc2ce7e445dc86378964c554c673",
+    title: "Drawing Class",
+    description:
+      "Fun Arts and Crafts projects for the children to work on together!",
+  },
+  {
+    imageSrc:
+      "https://cdn.builder.io/api/v1/image/assets/TEMP/b86daa636a2bfd53d9f340d45010665c1f425fe654927e3358fce284870c7bbe?placeholderIfAbsent=true&apiKey=69b6bc2ce7e445dc86378964c554c673",
+    title: "Drawing Class",
+    description:
+      "Fun Arts and Crafts projects for the children to work on together!",
+  },
+  {
+    imageSrc:
+      "https://cdn.builder.io/api/v1/image/assets/TEMP/b86daa636a2bfd53d9f340d45010665c1f425fe654927e3358fce284870c7bbe?placeholderIfAbsent=true&apiKey=69b6bc2ce7e445dc86378964c554c673",
+    title: "Drawing Class",
+    description:
+      "Fun Arts and Crafts projects for the children to work on together!",
+  },
 ];
 
 const ProgramsSection: React.FC = () => {
   const [currentSlide, setCurrentSlide] = React.useState(0);
   return (
-    <section className="mt-16 max-md:mt-10   ">
-      <div className="flex flex-col justify-center items-center px-[20px]">
+    <section className="mt-16 max-md:mt-10  px-[20px] max-w-screen  ">
+      <div className="flex flex-col justify-center items-center ">
         <h2 className="text-5xl font-bold tracking-widest leading-none text-black max-md:mt-10 max-md:text-4xl">
           Our Programs
         </h2>
-        <p className="mt-11 text-2xl tracking-wider leading-10 text-center text-black max-md:mt-10 max-md:max-w-full">
+        <p className="mt-6 text-2xl tracking-wider leading-10 text-center text-black max-md:mt-10 max-md:max-w-full">
           Our multi-level kindergarten cater to the age groups 2-5 years with a
           curriculum focussing children.
         </p>
-        <div className="mt-28 w-full max-w-[1674px] max-md:mt-10 max-md:max-w-full">
-          <div className="flex gap-5 max-md:flex-col">
-            <Carousel className="w-screen mx-[20px] ">
+        <div className="mt-12 w-full max-w-[1674px] max-md:mt-10 max-md:max-w-full">
+          <div className="flex  justify-center">
+            <Carousel className=" w-full    lg:max-w-[1440px]">
               <CarouselContent className="  ">
                 {programsData.map((program, index) => (
                   <CarouselItem
                     key={index}
-                    className=" md:basis-1/2 lg:basis-1/3"
+                    className=" md:basis-1 lg:basis-1/4"
                   >
                     <ProgramCard {...program} />
                   </CarouselItem>

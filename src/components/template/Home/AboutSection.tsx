@@ -2,7 +2,7 @@ import React from "react";
 
 const AboutSection: React.FC = () => {
   return (
-    <section className="mt-0 lg:mt-12 w-full max-w-[1763px] max-md:mt-10 max-md:max-w-full px-[62px] ">
+    <section className="mt-0 lg:mt-12 w-full max-w-[1763px] max-md:mt-10 max-md:max-w-full px-[20px] lg:px-[62px] ">
       <div className="flex gap-5 max-md:flex-col">
         <div className="flex flex-col w-[55%] justify-center items-center max-md:ml-0 max-md:w-full">
           <img
@@ -62,41 +62,6 @@ const AboutSection: React.FC = () => {
                   </div>
                 </div>
               </div>
-              {/* <div className="flex gap-5 max-md:flex-col">
-                <div className="flex flex-col w-[22%] max-md:ml-0 max-md:w-full">
-                  <div className="flex flex-col grow text-white max-md:mt-10">
-                    <div className="self-center text-3xl font-bold tracking-wider leading-none">
-                      14+
-                    </div>
-                    <div className="mt-6 text-xl tracking-wide leading-8 text-center">
-                      Years of experience
-                    </div>
-                  </div>
-                </div>
-                <div className="flex flex-col gap-5  w-[78%] max-md:ml-0 max-md:w-full">
-                  <div className="flex grow items-center   justify-between text-white max-md:mt-10">
-                    Continuing from where we left off:
-                    <div className="shrink-0 my-auto w-0.5 border-2 border-teal-300 border-solid h-[65px]" />
-                    <div className="flex flex-col">
-                      <div className="self-start ml-3.5 text-3xl font-bold tracking-wider leading-none max-md:ml-2.5">
-                        14+
-                      </div>
-                      <div className="mt-6 text-xl tracking-wide leading-8 text-center">
-                        Students each year
-                      </div>
-                    </div>
-                    <div className="shrink-0 my-auto w-0.5 border-2 border-teal-300 border-solid h-[65px]" />
-                    <div className="flex flex-col">
-                      <div className="self-start text-3xl font-bold tracking-wider leading-none">
-                        14+
-                      </div>
-                      <div className="mt-6 text-xl tracking-wide leading-8 text-center">
-                        Award winning
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div> */}
             </div>
             <div className="flex flex-wrap gap-4 mt-10 text-2xl tracking-wider leading-loose text-black">
               <img
@@ -123,7 +88,7 @@ const AboutSection: React.FC = () => {
             <div className="mt-10 max-w-full w-[599px]">
               <div className="flex gap-5 max-md:flex-col">
                 <div className="flex flex-col w-[47%] max-md:ml-0 max-md:w-full">
-                  <button className="self-stretch px-16 pt-5 pb-10 my-auto w-full text-2xl font-medium tracking-wider leading-loose text-white bg-orange-400 rounded-[42px] max-md:px-5 max-md:mt-5">
+                  <button className="self-stretch px-16 pt-4 pb-4 my-auto w-full text-2xl font-medium tracking-wider leading-loose text-white bg-orange-400 rounded-[42px] max-md:px-5 max-md:mt-5">
                     View more
                   </button>
                 </div>
